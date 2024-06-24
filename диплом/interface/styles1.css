@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    background-color: #f0f0f0; 
+    font-family: 'Poppins', sans-serif;
+    margin-top: 60px; 
+}
+.nav {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+}
+.nav a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 10px; 
+}
+.nav a:hover {
+    background-color: #dddddd;
+    color: #000000;
+}
+.nav a.nav__link {
+    margin-left: 10px; 
+}
+.nav a.nav__link:hover {
+    background-color: #dddddd;
+    color: #000000;
+}
+.right-container {
+    display: flex;
+    align-items: center;
+}
+.login-button, .reg-button {
+    font-family: 'Kaushan Script', cursive;
+    text-decoration: none;
+    background-color: #f0f0f0;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.login-button:hover, .reg-button:hover {
+    background-color: #b1ada0;
+}
+.login-button, .reg-button {
+    margin-left: 8px; 
+}
+.login-button {
+    font-family: 'Kaushan Script', cursive;
+    text-decoration: none;
+    background-color: #f1f08d;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+.login-button:hover, .search-button:hover {
+    background-color: #fce38a;
+}
+.reg-button {
+    font-family: 'Kaushan Script', cursive;
+    text-decoration: none;
+    background-color: #f1f08d;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+.reg-button:hover {
+    background-color: #fce38a;
+}
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: calc(100vh - 60px);
+}
+.profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Размещаем элементы по вертикали */
+    margin-top: 0;
+}
+.avatar {
+    margin-bottom: 20px; /* Отступ снизу */
+    position: relative;
+}
+.avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; 
+    border: 2px solid #fff; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+}
+.avatar input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+.info {
+    color: #333; 
+    width: 100%; /* Занимаем всю ширину контейнера */
+}
+.info h3 {
+    margin-top: 0;
+}
+.info a {
+    color: #007bff; 
+    text-decoration: none; 
+}
+.info a:hover {
+    text-decoration: underline; 
+}
+.info form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем элементы по горизонтали */
+}
+.info form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    width: 100%; /* Занимаем всю ширину контейнера */
+}
+.info form input[type="text"], .info form input[type="password"], .info form input[type="email"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%; /* Занимаем 80% ширины контейнера */
+}
+.info form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.info form button:hover {
+    background-color: #45a049;
+}

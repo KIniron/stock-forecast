@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  color: #ebdada; /* Чорний текст */
+  font-size: 16px;
+  background-color: #000000; /* Білий фон */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.container {
+  display: flex;
+}
+
+.nav {
+  position: fixed;
+  width: 30vw;
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5; /* Білий фон */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.content {
+  margin-top: 34px;
+  margin-left: 30vw;
+  width: 70vw;
+  padding: 2rem;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.start {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #000000; /* Чорний текст */
+}
+
+.input-place p {
+  color: #000000; /* Чорний текст */
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.form button {
+  width: 8rem;
+  background-color: #555555;
+  color: #ffffff; /* Білий текст */
+  border: none;
+  border-radius: 8px;
+  border: 2px solid #999999;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #333333;
+  color: #88c988;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 95%;
+  margin: 2rem;
+}
+.login-button,
+.reg-button {
+    font-family: 'Kaushan Script', cursive;
+    text-decoration: none;
+    background-color:  #f1f08d;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover,
+.reg-button:hover {
+    background-color:  #f1f08d;
+}
+.login-button,
+.reg-button {
+    margin-left: 8px; /* Reduce spacing between buttons */
+}
+
+.input-place {
+   margin-top: 4rem;
+   outline: none black;
+    padding-block: 1px;
+    padding-inline: 2px;
+    width: 80%;
+    padding: 5px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 5px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+input#dropdown_tickers {
+  width: 80%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+#forecast {
+  margin-top: 0rem;
+  height: 3rem;
+}
+
+#n_days {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 20px;
+  box-sizing: border-box;
+}
+
+.buttons button {
+  width: 15rem;
+  height: 3rem;
+  background-color: #51c792;
+  color: #ffffff; /* Білий текст */
+  border: 2px solid #000000;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #333333;
+  color: #88c988;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header p {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-left: 2rem;
+  line-height: 1.2;
+}
+
+#logo {
+  max-width: 40%;
+  height: auto;
+}
+
+.navbar {
+  background-color: #ffffff; /* Білий фон */
+  color: #333333; /* Темний текст */
+  padding: 10px 20px; /* Внутрішні відступи */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тінь */
+  position: fixed; /* Фіксуємо навігаційний бар зверху */
+  top: 0; /* Розташовуємо його у верхній частині */
+  width: 170%; /* Повна ширина екрану */
+  z-index: 1000; /* Встановлюємо високий індекс для накладання */
+}
+
+.navbar a {
+  float: right; /* Вирівнювання тексту по правій стороні */
+  display: inline-block;
+  color: #333333; /* Темний текст */
+  text-align: center;
+  padding: 10px 15px; /* Внутрішні відступи */
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #dddddd; /* Колір фону при наведенні */
+  color: #000000; /* Колір тексту при наведенні */
+}
+

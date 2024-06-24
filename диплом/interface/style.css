@@ -1,0 +1,91 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Navigation Styles */
+.navigation {
+    background-color: #ffffff;
+    color: #333333;
+    overflow: hidden;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navigation a {
+    float: right;
+    display: block;
+    color: #333333;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: #dddddd;
+    color: #000000;
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 0 20px;
+}
+
+
+.registration-form {
+    background-color: #ffffff;
+    padding: 40px; /* Збільшуємо внутрішні відступи */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 390px; /* Збільшуємо ширину форми */
+    margin-top: 0px; /* Збільшуємо відступ зверху */
+}
+
+.registration-form h2 {
+    color: #333333;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f1f08d;
+    color: #0c0909;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #cbccbb;
+}

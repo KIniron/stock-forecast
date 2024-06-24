@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #f7f7f7; /* Slightly темніший білий */
+    color: #333;
+    padding: 10px 0;
+}
+
+header a {
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+.showcase {
+    min-height: 490px; /* Зменшений верхній відступ */
+    background: #f7f7f7; /* Slightly темніший білий */
+    text-align: center;
+    color: #333;
+    padding: 20px 0 20px; /* Зменшений нижній padding */
+}
+
+.showcase h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.showcase p {
+    font-size: 20px;
+}
+
+.navigation {
+    background-color: #fff; /* Білий фон */
+    color: #333; /* Темний текст */
+    overflow: hidden;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Додавання тіні */
+}
+
+.navigation a {
+    float: right; /* Вирівнювання тексту по правій стороні */
+    display: block;
+    color: #333; /* Темний текст */
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: #ddd; /* Колір фону при наведенні */
+    color: black; /* Колір тексту при наведенні */
+}
+
+.chat-container {
+    width: calc(100% - 10px); /* Повна ширина мінус бокові відступи */
+    max-width: 1600px; /* Збільшений max-width */
+    margin: 5px auto 0; /* Видалений верхній відступ */
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 0 30px; /* Бокові відступи по 30px */
+}
+
+.chat-output {
+    height: 800px;
+    overflow-y: auto;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-message {
+    background-color: #d1e7dd;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.model-message {
+    background-color: #f8d7da;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.model-message table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.model-message th, .model-message td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.model-message th {
+    background-color: #f2f2f2;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: left;
+    color: red;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}

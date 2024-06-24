@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url("https://use.fontawesome.com/releases/v6.4.2/css/all.css");
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff8f8;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+*,
+*before,
+*after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.container1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.container2 {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    
+}
+
+.container4 {
+    text-align: center;
+    color: #000;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+    background-color: #ffffff;
+    margin-top: 100px;
+}
+
+/* Header */
+.header {
+    padding-top: 8px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header--fixed {
+    padding: 8px 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: translate3d(0,0,0);
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+}
+
+.nav {
+    background-color: #ffffff;
+    padding: 10px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+}
+
+.nav a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 10px; /* Add margin to separate links */
+}
+
+.nav a:hover {
+    background-color: #dddddd;
+    color: #000000;
+}
+.nav a.nav__link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 10px; /* Add margin to separate links */
+}
+
+.nav a.nav__link:hover {
+    background-color: #dddddd;
+    color: #000000;
+}
+
+.right-container {
+    display: flex;
+    align-items: center;
+}
+
+.login-button,
+.reg-button {
+    font-family: 'Kaushan Script', cursive;
+    text-decoration: none;
+    background-color: #f0f0f0;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover,
+.reg-button:hover {
+    background-color: #b1ada0;
+}
+
+/* Adjustments for smaller spacing between text */
+.nav a {
+    margin-left: 8px; /* Reduce spacing between links */
+}
+
+.login-button,
+.reg-button {
+    margin-left: 8px; /* Reduce spacing between buttons */
+}
+
+.center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.right-container {
+    display: flex;
+    align-items: center;
+}
+
+.login-button {
+    font-family: 'Kaushan Script', cursive;
+    text-decoration: none;
+    background-color: #f1f08d;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.login-button:hover,
+.search-button:hover {
+    background-color: #fce38a;
+}
+
+.reg-button {
+    font-family: 'Kaushan Script', cursive;
+    text-decoration: none;
+    background-color: #f1f08d;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.reg-button:hover {
+    background-color: #fce38a;
+}
+.hero {
+    text-align: center;
+    padding: 320px 30px;
+    background-image: url('1.jpg'); /* Замініть 'фото1.jpg' на шлях до вашої картинки */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Зробити текст білим для кращої читабельності */
+    width: calc(100% - 180px); /* Віднімання 40px для відступів по 20px з кожної сторони */
+    margin: 0 5px; /* Додавання відступів по 20px з кожної сторони */
+    box-sizing: border-box;
+    
+}
+
+.hero__content {
+    background: rgba(0, 0, 0, 0.5); /* Напівпрозорий чорний фон для тексту */
+    padding: 30px;
+    display: inline-block;
+    max-width: 800px; /* Максимальна ширина контенту */
+    margin: 0 auto; /* Центрування контенту */
+    border-radius: 20px; /* Закруглення кутів */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Додавання тіні */
+}
+
+.hero__title {
+    font-size: 3em; /* Збільшити розмір тексту */
+    font-family: 'Montserrat', sans-serif; /* Додавання стильного шрифту */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Додавання тіні до тексту */
+    animation: fadeIn 2s ease-in; /* Анімація при завантаженні */
+}
+
+.hero__subtitle {
+    font-size: 1.5em; /* Збільшити розмір тексту */
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Додавання тіні до тексту */
+    animation: fadeIn 3s ease-in; /* Анімація при завантаженні */
+}
+
+.hero__button {
+    padding: 15px 30px; /* Збільшити розмір кнопки */
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em; /* Збільшити розмір тексту кнопки */
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px; /* Закруглення кутів кнопки */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Додавання тіні до кнопки */
+    transition: background-color 0.3s ease; /* Анімація зміни кольору */
+}
+
+.hero__button:hover {
+    background-color: #0056b3; /* Зміна кольору при наведенні */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+.features {
+    text-align: center;
+    background-image: url('2.webp');
+    padding: 100px 20px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: calc(100% - 180px); /* Віднімаємо 20px з обох сторін */
+    margin: 0 auto; /* Вирівнюємо по центру */
+    box-sizing: border-box;
+}
+
+.features__item {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.features__title {
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+.features__description{
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    
+}
+.features__button {
+    padding: 15px 30px; /* Збільшити розмір кнопки */
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em; /* Збільшити розмір тексту кнопки */
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px; /* Закруглення кутів кнопки */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Додавання тіні до кнопки */
+    transition: background-color 0.3s ease; /* Анімація зміни кольору */
+}
+.features__button:hover {
+    background-color: #0056b3; /* Зміна кольору при наведенні */
+}
+
+.slider-container {
+    position: relative;
+    max-width: 1040px; /* Розмір контейнера для картинок */
+    margin: 0px auto;
+    
+}
+
+.slide {
+    width: 1040px; /* Фіксована ширина для кожної картинки */
+    margin: 0 auto; /* Центрування картинок в контейнері */
+}
+
+.slide img {
+    width:  1040px; /* Розтягуємо картинку на всю ширину контейнера */
+    object-fit: contain; /* Збереження пропорцій при зміні розміру */
+}
+
+.slide_text {
+    position: absolute;
+    top: 0; /* Піднімаємо текст вгору */
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    box-sizing: border-box; /* Забезпечуємо, що внутрішні відступи враховуються в обчисленні ширини елемента */
+}
+
+.button-container {
+    text-align: center;
+    
+}
+
+.button-container button {
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+.button-container button.active {
+    background-color: #f1f08d; 
+}
+
+.how-it-works {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 90px;
+}
+
+.how-it-works__content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.how-it-works__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.how-it-works__video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.how-it-works__video video {
+    max-width: calc(100% - 60px);
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.how-it-works__description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.how-it-works__button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.how-it-works__button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,95 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Стилі для навігаційного меню */
+.nav {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end; /* Розміщуємо елементи по правому краю */
+    align-items: center;
+}
+
+.nav a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 10px; /* Додаємо відступ між посиланнями */
+}
+
+.nav a:hover {
+    background-color: #dddddd;
+    color: #000000;
+}
+
+/* Стилі для форми реєстрації */
+form {
+    max-width: 300px;
+    margin:300px auto; /* Зменшуємо відступи */
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 22px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі для кнопки "Login" */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #f1f08d;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 0px; /* Додаємо відступ перед кнопкою */
+}
+button[type="submit"]:hover {
+    background-color: #abbdcf;
+}
+.register-link {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+p {
+    text-align: center;
+    color: #ff0000;
+}
